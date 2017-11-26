@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+
+        <h:form>
+            <h1><h:outputText value="Nuevo Articulo"/></h1>
+            <p:panelGrid columns="2">
+                <p:outputLabel value="Código:" for="codigo" />
+                <p:inputText id="codigo" value="#{articuloController.articulo.codigo}" title="Codigo" required="true" requiredMessage="The Codigo field is required."/>
+                <p:outputLabel value="Descripción:" for="descripcion" />
+                <p:inputText id="descripcion" value="#{articuloController.articulo.descripcion}" title="Descripcion" required="true" requiredMessage="The Descripcion field is required."/>
+                <p:outputLabel value="Clasificación:" for="clasificacion" />
+                <p:inputText id="clasificacion" value="#{articuloController.articulo.clasificacion}" title="Clasificacion" required="true" requiredMessage="The Clasificacion field is required."/>
+                <p:outputLabel value="Precio:" for="precio" />
+                <p:inputText id="precio" value="#{articuloController.articulo.precio}" title="Precio" required="true" requiredMessage="The Precio field is required."/>
+            
+            </p:panelGrid>
+            <p:commandButton value="Guardar" action="#{articuloController.addArticulo()}"/>
+
+        </h:form>
+
+    </h:body>
+</html>
+

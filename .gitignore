@@ -1,0 +1,6 @@
+/build/
+/dist/
+/appArticuloEjb-war/build/
+/appArticuloEjb-war/dist/
+/appArticuloEjb-ejb/build/
+/appArticuloEjb-ejb/dist/
